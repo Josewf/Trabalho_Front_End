@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useState } from 'react';
-import './DigmonMain.css'
+import './Main.css'
 import axios from 'axios';
 import imgDigmon from '../images/DigmonImage.png'
 import { useNavigate } from 'react-router-dom';
 
-const DigmonMain = () => {
+const Main = () => {
     const navigate = useNavigate();
     const[dataDigmon,setDataDigmon] = useState([]);
 
@@ -54,4 +54,4 @@ const DigmonMain = () => {
     )
 }
 
-export default DigmonMain;
+export default Main;

@@ -1,23 +1,29 @@
+import React from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css';
-import DigmonMain from './pages/DigmonMain';
-import DigmonDetails from './pages/DigmonDetails';
+import Info from './pages/Info';
+import Main from './pages/Main';
+import Login from './pages/Login';
+
 
 function App() {
-
   const routes = createBrowserRouter([
     {
-      path:'/',
-      element:<DigmonMain/>
+      path: '/',
+      element: <Login />
     },
     {
-      path:'detail/:id',
-      element:<DigmonDetails/>
+      path: '/main',
+      element: <Main />
+    },
+    {
+      path: '/info/:id',
+      element: <Info />
     }
-  ])
+  ]);
 
   return (
-    <RouterProvider router={routes}/>
+    <RouterProvider router={routes} />
   );
 }
 

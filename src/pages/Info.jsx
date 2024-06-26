@@ -1,10 +1,10 @@
 import axios from 'axios';
-import './DigmonDetails.css'
+import './Info.css'
 import imgDigmon from '../images/DigmonImage.png'
 import { useCallback, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-const DigmonDetails = () => {
+const Info = () => {
     const navigate = useNavigate();
     const [digmonDetails,setDigmonDetails] = useState([]);
     const [digmonDetailsFilter,setDigmonDetailsFilter] = useState([]);
@@ -83,4 +83,4 @@ const renderDigmonDetails = () =>{
         </header>
     )
 }
-export default DigmonDetails;
+export default Info;
